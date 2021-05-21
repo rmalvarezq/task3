@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+.unit-wrapper {
+  background: linear-gradient(170deg, rgb(95, 93, 254), rgb(213, 213, 231));
+  /* background-color: #5F5DFE; */
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 80px 0px;
+  /* background-image: url("https://img.freepik.com/vector-gratis/fondo-elementos-isometricos-comercio-electronico_52683-536.jpg?size=626&ext=jpg"); */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: rgba(99, 92, 92, 0) !important;
+  color: black !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.unit-wrapper img {
+  width: 80%;
+  height: 90%;
+  margin: 5%;
 }
