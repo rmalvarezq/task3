@@ -1,17 +1,46 @@
-.unit-wrapper {
+/* .unit-wrapper {
   background: linear-gradient(170deg, rgb(95, 93, 254), rgb(213, 213, 231));
-  /* background-color: #5F5DFE; */
   width: 100%;
+  min-height: 500px;
   height: 100%;
-  border-radius: 0px 0px 80px 0px;
-  /* background-image: url("https://img.freepik.com/vector-gratis/fondo-elementos-isometricos-comercio-electronico_52683-536.jpg?size=626&ext=jpg"); */
+  border-radius: 0px 0px 150px 0px;
+} */
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
-.navbar {
-  background: rgba(99, 92, 92, 0) !important;
-  color: black !important;
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
 }
-.unit-wrapper img {
-  width: 80%;
-  height: 90%;
-  margin: 5%;
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.block {
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.cards{
+  margin: 200px;
+  padding: 15px;
 }

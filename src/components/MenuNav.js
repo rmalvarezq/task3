@@ -1,13 +1,27 @@
 import React, { useState } from "react";
-import { Menu } from "antd";
+import { Menu, Dropdown } from "antd";
 import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
+  DownOutlined,
 } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
-
+const menu = (
+  <Menu theme="dark">
+    <Menu.Item>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.antgroup.com"
+      >
+        1st menu item
+      </a>
+    </Menu.Item>
+    <Menu.Item danger>a danger item</Menu.Item>
+  </Menu>
+);
 export default function MenuNav() {
   const [collapsed, setCollapsed] = useState(false);
   const handleClick = (e) => {
@@ -16,8 +30,13 @@ export default function MenuNav() {
   };
   const { current } = setCollapsed;
   return (
-    <div className="navbar">
-      <Menu className="navbar" onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+    <>
+      <Menu
+        theme="dark"
+        onClick={handleClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+      >
         <Menu.Item key="mail" icon={<MailOutlined />}>
           Navigation One
         </Menu.Item>
@@ -38,16 +57,26 @@ export default function MenuNav() {
             <Menu.Item key="setting:4">Option 4</Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
-        <Menu.Item key="alipay">
-          <a
-            href="https://ant.design"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Navigation Four - Link
-          </a>
-        </Menu.Item>
+          <Menu.Item key="alipay">
+            <a
+              href="https://ant.design"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Navigation Four - Link
+            </a>
+          </Menu.Item>
+          <Menu.Item key="alipay">
+            <Dropdown overlay={menu}>
+              <a
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Log In <DownOutlined />
+              </a>
+            </Dropdown>
+          </Menu.Item>
       </Menu>
-    </div>
+    </>
   );
 }
