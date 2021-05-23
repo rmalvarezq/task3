@@ -8,18 +8,18 @@ export default function CalendarA() {
     switch (value.date()) {
       case 8:
         listData = [
-          { type: "warning", content: "warning " },
+          { type: "warning", content: "event" },
         ];
         break;
       case 10:
         listData = [
-          { type: "warning", content: "event." },
+          { type: "warning", content: "event" },
         ];
         break;
       case 15:
         listData = [
           { type: "success", content: " event" },
-          { type: "error", content: "error event 4." },
+          { type: "error", content: "error" },
         ];
         break;
       default:

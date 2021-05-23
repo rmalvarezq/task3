@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import "antd/dist/antd.css";
 import Grid1 from "./components/Grid1";
-import { Layout, Menu, Row, Col } from "antd";
+import { Layout, Menu, Row, Col, Divider, Tabs } from "antd";
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -10,13 +10,22 @@ import {
   VideoCameraOutlined,
   UploadOutlined,
 } from "@ant-design/icons";
+
 import Paginationa from "./components/Paginationa";
 import Grid2 from "./components/Grid2";
 import Gridindex from "./components/Gridindex";
 import ParallaxAjs from "./components/ParallaxAjs";
+import Grid3 from "./components/Grid3";
+import Grid4 from "./components/Grid4";
+import Grid5 from "./components/Grid5";
+import Grid6 from "./components/Grid6";
 
 const { Header, Sider, Content } = Layout;
+const { TabPane } = Tabs;
 
+function callback(key) {
+  console.log(key);
+}
 function App() {
   const [collapsed, setCollapsed] = useState(false);
   const toggle = (e) => {
@@ -63,13 +72,26 @@ function App() {
             <Gridindex></Gridindex>
             <ParallaxAjs></ParallaxAjs>
             <Grid1></Grid1>
-
             <div className="block">
               <div className="center">
                 <Paginationa className="center"></Paginationa>
               </div>
             </div>
             <Grid2></Grid2>
+            <Tabs defaultActiveKey="1" onChange={callback}>
+              <TabPane tab="Tab 1" key="1">
+                <Grid3></Grid3>
+              </TabPane>
+              <TabPane tab="Tab 2" key="2">
+                <Grid4></Grid4>
+              </TabPane>
+              <TabPane tab="Tab 3" key="3">
+                <Grid5></Grid5>
+              </TabPane>
+              <TabPane tab="Tab 4" key="4">
+                <Grid6></Grid6>
+              </TabPane>
+            </Tabs>
           </Content>
         </Layout>
       </Layout>
