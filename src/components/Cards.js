@@ -5,16 +5,15 @@ import {
   EllipsisOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-import Affix1 from "./Affix1";
-import Paginationa from "./Paginationa";
 const { Meta } = Card;
-export default function Cards() {
+
+export default function Cards(props) {
   return (
     <>
       <Card
         hoverable
         cover={
-          <Image src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+          <Image src={props.imagen} />
         }
         actions={[
           <SettingOutlined key="setting" />,

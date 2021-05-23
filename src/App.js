@@ -2,7 +2,6 @@ import "./App.css";
 import React, { useState } from "react";
 import "antd/dist/antd.css";
 import Grid1 from "./components/Grid1";
-import Breadcumbast from "./components/Breadcumbast";
 import { Layout, Menu, Row, Col } from "antd";
 import {
   MenuUnfoldOutlined,
@@ -12,6 +11,9 @@ import {
   UploadOutlined,
 } from "@ant-design/icons";
 import Paginationa from "./components/Paginationa";
+import Grid2 from "./components/Grid2";
+import Gridindex from "./components/Gridindex";
+import ParallaxAjs from "./components/ParallaxAjs";
 
 const { Header, Sider, Content } = Layout;
 
@@ -57,12 +59,17 @@ function App() {
               minHeight: 280,
             }}
           >
+            <ParallaxAjs></ParallaxAjs>
+            <Gridindex></Gridindex>
+            <ParallaxAjs></ParallaxAjs>
             <Grid1></Grid1>
+
             <div className="block">
               <div className="center">
                 <Paginationa className="center"></Paginationa>
               </div>
             </div>
+            <Grid2></Grid2>
           </Content>
         </Layout>
       </Layout>

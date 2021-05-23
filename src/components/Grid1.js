@@ -12,16 +12,15 @@ export default function Grid1() {
               sm={{ span: 12, offset: 5 }}
               md={{ span: 8, offset: 3 }}
             >
-              <Cards></Cards>
+              <Cards imagen={"http://placeimg.com/640/480/any"}></Cards>
             </Col>
             <Col
               xs={{ span: 24, offset: 1 }}
               sm={{ span: 12, offset: 5 }}
               md={{ span: 8, offset: 3 }}
             >
-              <Cards></Cards>
+              <Cards imagen={"https://picsum.photos/640/480"}></Cards>
             </Col>
-           
           </Row>
         </div>
       </div>

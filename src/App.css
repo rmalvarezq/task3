@@ -1,25 +1,9 @@
-/* .unit-wrapper {
-  background: linear-gradient(170deg, rgb(95, 93, 254), rgb(213, 213, 231));
-  width: 100%;
-  min-height: 500px;
-  height: 100%;
-  border-radius: 0px 0px 150px 0px;
-} */
 #components-layout-demo-custom-trigger .trigger {
   padding: 0 24px;
   font-size: 18px;
   line-height: 64px;
   cursor: pointer;
   transition: color 0.3s;
-}
-#components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
-}
-
-#components-layout-demo-custom-trigger .logo {
-  height: 32px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.3);
 }
 
 .site-layout .site-layout-background {
@@ -30,6 +14,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  margin: 20px;
 }
 .block {
   padding: 20px 0;
@@ -39,8 +24,122 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 15px;
+  color: #fff;
+  text-align: justify;
 }
-.cards{
+
+.container-fluid-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  text-align: justify;
+}
+.cards {
   margin: 200px;
   padding: 15px;
+}
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+
+.upload-list-inline [class*="-upload-list-rtl"] .ant-upload-list-item {
+  float: right;
+}
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+
+@keyframes backColorChange {
+  0% {
+    background-color: rgba(86, 97, 182, 0.995);
+  }
+  50% {
+    background-color: rgb(54, 99, 136);
+  }
+  100% {
+    background-color: rgb(51, 130, 148);
+  }
+}
+.heroBlock {
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  text-align: justify;
+  height: 23vh;
+  animation: backColorChange 5s ease-in 1s infinite reverse;
+}
+.heroBlock .content {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 70px;
+}
+#color-white {
+  color: #fafad2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.worksBlock {
+  background: url("https://i2.wp.com/frases.top/wp-content/uploads/2019/11/fondos-de-pantalla-4k-escritorio.jpg")
+    no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+
+.worksBlock:before {
+  content: "";
+  background: rgba(226, 204, 204, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.worksBlock h2 {
+  color: rgb(255, 255, 255);
+}
+.worksBlock .contentHolder {
+  text-align: center;
+}
+.worksBlock .contentHolder button {
+  font-size: 40px;
+  line-height: 1;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background-color: black;
 }
